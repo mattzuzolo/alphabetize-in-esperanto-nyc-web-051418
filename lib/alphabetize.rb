@@ -23,7 +23,6 @@ def alphabetize(arr)
         
         #get letters in order of esperanto alphabet
         #use map to reassign index of individual_letters based on the esperanto alphabet
-          
         letters.map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
