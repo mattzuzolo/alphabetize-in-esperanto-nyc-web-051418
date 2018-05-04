@@ -22,7 +22,7 @@ def alphabetize(arr)
     
       letters = sentence.split("")
     
-          letters.map { esperanto_alphabet.find_index(individual_letter) }
+          letters.map { esperanto_alphabet.index(individual_letter) }
   
       
        binding.pry
