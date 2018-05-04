@@ -29,7 +29,7 @@ def alphabetize(arr)
        
     #
     
-   final_array.sort
+   final_array
    binding.pry
 end  
 
