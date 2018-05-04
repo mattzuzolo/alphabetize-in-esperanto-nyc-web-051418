@@ -23,7 +23,7 @@ def alphabetize(arr)
           letters.map { esperanto_alphabet.find_index(individual_letter) }
   
       
-       #binding.pry
+       binding.pry
     end
     
    final_array.sort
