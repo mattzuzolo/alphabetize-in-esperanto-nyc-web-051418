@@ -20,9 +20,7 @@ def alphabetize(arr)
       
       #get letters in order of esperanto alphabet
       
-          letters.map do |individual_letter|
-            
-            esperanto_alphabet.find_index(individual_letter)
+          letters.map { esperanto_alphabet.find_index(individual_letter) }
             
           end
       
