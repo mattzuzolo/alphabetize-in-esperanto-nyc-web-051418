@@ -10,7 +10,7 @@ def alphabetize(arr)
   
 esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 esperanto_array = esperanto_alphabet.split("")
-
+final_array = []
 
 letter = []
 
@@ -21,17 +21,18 @@ letter = []
       
       #get letters in order of esperanto alphabet
       
-          letters.each do |individual_letter|
+          letters.each_with_index do |individual_letter, letter_index|
             
             #get them order here
-            esperanto_alphabet
+            final_array << esperanto_alphabet.find_index(individual_letter)
             
           end
       
-       binding.pry
+       #binding.pry
     end
     
-   
+   final_array.sort
+   binding.pry
 end  
 
 
