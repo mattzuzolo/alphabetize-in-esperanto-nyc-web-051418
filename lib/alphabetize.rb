@@ -14,7 +14,7 @@ esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
   
     
-
+binding.pry
     arr.sort_by do |sentence|
       
       #split sentence into array of letters
@@ -25,7 +25,7 @@ def alphabetize(arr)
           letters.map { esperanto_alphabet.index(individual_letter) }
   
       
-       binding.pry
+       
     end
     
    final_array.sort
