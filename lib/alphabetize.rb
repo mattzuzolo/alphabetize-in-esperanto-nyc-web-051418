@@ -14,8 +14,10 @@ esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
   
     
-binding.pry
+
     arr.sort_by do |sentence|
+      
+      binding.pry
       
       #split sentence into array of letters
        #get letters in order of esperanto alphabet
