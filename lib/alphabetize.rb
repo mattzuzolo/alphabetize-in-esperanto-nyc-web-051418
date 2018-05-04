@@ -7,7 +7,7 @@ require 'pry'
 esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
     esperanto_array = esperanto_alphabet.split("")
 
-    letter = []
+    letters = []
 
 #binding.pry
 
@@ -21,10 +21,10 @@ def alphabetize(arr)
       
       #split sentence into array of letters
        #get letters in order of esperanto alphabet
-    
+    letters = sentence.split("")
       
     #use map to reassign index of individual_letters based on the esperanto alphabet
-          sentence.split("").map { |individual_letter| esperanto_array.index(individual_letter) }
+          letters.map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
     end
