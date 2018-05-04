@@ -21,8 +21,7 @@ def alphabetize(arr)
       #get letters in order of esperanto alphabet
       
           letters.map { esperanto_alphabet.find_index(individual_letter) }
-            
-          end
+  
       
        #binding.pry
     end
