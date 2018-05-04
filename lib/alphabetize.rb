@@ -24,7 +24,7 @@ def alphabetize(arr)
     
       
     
-          sentence.split("").map { esperanto_alphabet.index(individual_letter) }
+          sentence.split("").map { esperanto_array.index(individual_letter) }
       
        
     end
