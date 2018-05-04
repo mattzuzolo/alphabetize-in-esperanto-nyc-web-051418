@@ -25,7 +25,6 @@ def alphabetize(arr)
       
     
           sentence.split("").map { esperanto_alphabet.index(individual_letter) }
-  binding.pry
       
        
     end
