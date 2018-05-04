@@ -8,10 +8,10 @@ require 'pry'
 
 def alphabetize(arr)
   
-esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-esperanto_array = esperanto_alphabet.split("")
+    esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+    esperanto_array = esperanto_alphabet.split("")
 
-letter = []
+    letter = []
 
     arr.sort_by do |sentence|
       
