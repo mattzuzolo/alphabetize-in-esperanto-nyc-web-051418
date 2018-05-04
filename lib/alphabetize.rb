@@ -23,9 +23,9 @@ def alphabetize(arr)
        #get letters in order of esperanto alphabet
     
       letters = sentence.split("")
-    binding.pry
+    
           letters.map { esperanto_alphabet.index(individual_letter) }
-  
+  binding.pry
       
        
     end
