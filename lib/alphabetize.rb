@@ -27,7 +27,7 @@ def alphabetize(arr)
         letters.map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
-    end
+    end # end sort_by
 
 end  #end method
 
