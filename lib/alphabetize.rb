@@ -4,22 +4,24 @@ require 'pry'
 # esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 # esperanto_array = esperanto_alphabet.split("")
 
-#binding.pry
-
-def alphabetize(arr)
-  
-    esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
     esperanto_array = esperanto_alphabet.split("")
 
     letter = []
 
+#binding.pry
+
+def alphabetize(arr)
+  
+    
+
     arr.sort_by do |sentence|
       
       #split sentence into array of letters
+       #get letters in order of esperanto alphabet
+    
       letters = sentence.split("")
-      
-      #get letters in order of esperanto alphabet
-      
+    
           letters.map { esperanto_alphabet.find_index(individual_letter) }
   
       
