@@ -24,7 +24,7 @@ def alphabetize(arr)
     
       
     #use map to reassign index of individual_letters based on the esperanto alphabet
-          sentence.split("").map { esperanto_array.index(individual_letter) }
+          sentence.split("").map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
     end
