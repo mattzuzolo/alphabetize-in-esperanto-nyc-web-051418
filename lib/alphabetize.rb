@@ -23,7 +23,7 @@ def alphabetize(arr)
        #get letters in order of esperanto alphabet
     
       
-    
+    #use map to reassign index of individual_letters based on the esperanto alphabet
           sentence.split("").map { esperanto_array.index(individual_letter) }
       
        
