@@ -22,9 +22,9 @@ def alphabetize(arr)
       #split sentence into array of letters
        #get letters in order of esperanto alphabet
     
-      letters = sentence.split("")
+      
     
-          letters.map { esperanto_alphabet.index(individual_letter) }
+          sentence.split("").map { esperanto_alphabet.index(individual_letter) }
   binding.pry
       
        
