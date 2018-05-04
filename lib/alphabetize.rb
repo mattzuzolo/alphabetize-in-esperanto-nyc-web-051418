@@ -8,62 +8,108 @@ require 'pry'
 
 def alphabetize(arr)
   
-  esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 esperanto_array = esperanto_alphabet.split("")
-final_array = []
-final_element = nil
+
+
+letter = []
+
+    arr.sort_by do |sentence|
+      
+      #split sentence into array of letters
+      letters = sentence.split("")
+      
+      #get letters in order of esperanto alphabet
+      
+          letters.each do |individual_letter|
+            
+            #get them order here
+            esperanto_alphabet
+            
+          end
+      
+       binding.pry
+    end
+    
+   
+end  
+
+
+
+
+
+
+# final_array = []
+# final_element = nil
   
  
     
-    arr.sort
+#     arr.sort
     
     
     
-    arr.sort_by do |element|
-      #arr is array of sentences
-      #element is individual sentences
+#     arr.sort_by do |element|
+#       #arr is array of sentences
+#       #element is individual sentences
       
-      #holds an array of all letters in sentence
-      sentence_letters = []
+#       #holds an array of all letters in sentence
+#       sentence_letters = []
       
       
-      sentence_letters = element.split("")
-      #sentence_letters is an array of each letter/space in the sentence
+#       sentence_letters = element.split("")
+#       #sentence_letters is an array of each letter/space in the sentence
       
-      sentence_letters.sort_by do |individual_letters|
-      esperanto_array.index(individual_letters)
+#       sentence_letters.sort_by do |individual_letters|
+#       esperanto_array.index(individual_letters)
       
     
-      end
-    end
-end
+#       end
+#     end
+# end
 
 
- #https://stackoverflow.com/questions/37990997/how-to-sort-one-array-based-on-another-array-using-ruby
+# #https://stackoverflow.com/questions/37990997/how-to-sort-one-array-based-on-another-array-using-ruby
  
  
- 
-    # new_arr = arr.sort_by do 
+
+
+#     # new_arr = arr.sort_by do 
       
-    #   |element| element.split("").sortby { |
+#     #   |element| element.split("").sortby { |
       
       
-    #   binding.pry
-    # end  
+#     #   binding.pry
+#     # end  
     
-    # arr.map do |element|
-    #   element_split = element.split("")
+
+#     # arr.map do |element|
+#     #   element_split = element.split("")
       
-    #   element_split.sort_by do |element_letters|
+#     #   element_split.sort_by do |element_letters|
         
-    #       esperanto_array.find_index(element_letters)
-    #       binding.pry
+#     #       esperanto_array.find_index(element_letters)
+#     #       binding.pry
            
-    #   end
+#     #   end
 
     
        
-    # #  final_element = element.join("")
+#     # #  final_element = element.join("")
       
       
-    # end
+#     # end
+
+#     arr.map do |element|
+#       element_split = element.split("")
+      
+#       element_split.sort_by do |element_letters|
+        
+        
+#         #https://stackoverflow.com/questions/37990997/how-to-sort-one-array-based-on-another-array-using-ruby
+        
+#       binding.pry
+       
+#       end
+
+  
+
