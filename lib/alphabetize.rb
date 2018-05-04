@@ -24,14 +24,13 @@ def alphabetize(arr)
     letters = sentence.split("")
       
     #use map to reassign index of individual_letters based on the esperanto alphabet
-          letters.map { |individual_letter| esperanto_array.index(individual_letter) }
+          
+    letters.map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
     end
-    
-   final_array.sort
-   binding.pry
-end  
+
+end  #end method
 
 
 
