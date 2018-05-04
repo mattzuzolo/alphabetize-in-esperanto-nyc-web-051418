@@ -6,7 +6,7 @@ require 'pry'
 
 
 
-    letters = []
+    
 
 #binding.pry
 
@@ -14,14 +14,13 @@ def alphabetize(arr)
   
     esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
     esperanto_array = esperanto_alphabet.split("")
+    letters = [] #holds an array of each letter in the string obtained from arr
 
     arr.sort_by do |sentence| 
       
-      
-      
-      #split sentence into array of letters
-       #get letters in order of esperanto alphabet
-    letters = sentence.split("")
+        #split sentence into array of letters
+        #get letters in order of esperanto alphabet
+        letters = sentence.split("")
       
     #use map to reassign index of individual_letters based on the esperanto alphabet
           
