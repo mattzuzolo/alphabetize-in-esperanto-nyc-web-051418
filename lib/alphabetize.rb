@@ -4,8 +4,7 @@ require 'pry'
 # esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 # esperanto_array = esperanto_alphabet.split("")
 
-esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-    esperanto_array = esperanto_alphabet.split("")
+
 
     letters = []
 
@@ -13,7 +12,8 @@ esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(arr)
   
-    
+    esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+    esperanto_array = esperanto_alphabet.split("")
 
     arr.sort_by do |sentence| 
       
