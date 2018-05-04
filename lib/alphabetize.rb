@@ -17,13 +17,13 @@ def alphabetize(arr)
 
     arr.sort_by do |sentence|
       
-      binding.pry
+      
       
       #split sentence into array of letters
        #get letters in order of esperanto alphabet
     
       letters = sentence.split("")
-    
+    binding.pry
           letters.map { esperanto_alphabet.index(individual_letter) }
   
       
