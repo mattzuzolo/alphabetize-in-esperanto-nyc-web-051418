@@ -19,12 +19,12 @@ def alphabetize(arr)
     arr.sort_by do |sentence| 
       
         #split sentence into array of letters
-        #get letters in order of esperanto alphabet
         letters = sentence.split("")
-      
-    #use map to reassign index of individual_letters based on the esperanto alphabet
+        
+        #get letters in order of esperanto alphabet
+        #use map to reassign index of individual_letters based on the esperanto alphabet
           
-    letters.map { |individual_letter| esperanto_array.index(individual_letter) }
+        letters.map { |individual_letter| esperanto_array.index(individual_letter) }
       
        
     end
