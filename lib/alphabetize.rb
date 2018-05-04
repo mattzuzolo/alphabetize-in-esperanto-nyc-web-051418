@@ -4,35 +4,31 @@ require 'pry'
 # esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 # esperanto_array = esperanto_alphabet.split("")
 
+
+
+    
+
 #binding.pry
 
 def alphabetize(arr)
   
-esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-esperanto_array = esperanto_alphabet.split("")
+    esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+    esperanto_array = esperanto_alphabet.split("")
+    letters = [] #holds an array of each letter in the string obtained from arr
 
+    arr.sort_by do |sentence| 
+      
+        #split sentence into array of letters
+        letters = sentence.split("")
+        
+        #get letters in order of esperanto alphabet
+        #use map to reassign index of individual_letters based on the esperanto alphabet
+        letters.map { |individual_letter| esperanto_array.index(individual_letter) }
+      
+       
+    end # end sort_by
 
-letter = []
-
-    arr.sort_by do |sentence|
-      
-      #split sentence into array of letters
-      letters = sentence.split("")
-      
-      #get letters in order of esperanto alphabet
-      
-          letters.each do |individual_letter|
-            
-            #get them order here
-            esperanto_alphabet
-            
-          end
-      
-       binding.pry
-    end
-    
-   
-end  
+end  #end method
 
 
 
